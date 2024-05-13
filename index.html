@@ -26,18 +26,46 @@
   </head>
 
   <body>
-    <section>
+    <section class="ligtbulb-1">
       <a
-        onclick="document.getElementById('lamper').src='/assets/img/bulbon.gif'"
+        onclick="document.getElementById('lamper1').src='/assets/img/bulbon.gif'"
         href="#"
         >Turn on the light</a
       >
-      <img src="/assets/img/bulboff.gif" alt="" id="lamper" />
+      <img src="/assets/img/bulboff.gif" alt="" id="lamper1" />
       <a
-        onclick="document.getElementById('lamper').src='/assets/img/bulboff.gif'"
+        onclick="document.getElementById('lamper1').src='/assets/img/bulboff.gif'"
         href="#"
         >Turn off the light</a
       >
     </section>
+
+    <section class="lightbulb-2">
+      <img src="/assets/img/bulboff.gif" alt="" id="lamper2" />
+      <img
+        id="turnOff"
+        onclick="off()"
+        src="/assets/img/button-on.png"
+        alt=""
+      />
+      <img id="turnOn" onclick="on()" src="/assets/img/button-off.png" alt="" />
+    </section>
   </body>
+
+  <section class="faq">
+    <div id="show">
+      <h4>FAQ</h4>
+      <i id="faq-btn-off" onclick="off()" class="fa-solid fa-caret-up"></i>
+      <i id="faq-btn-on" onclick="on()" class="fa-solid fa-caret-down"></i>
+    </div>
+
+    <article id="hide">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit non ea
+        quod ad harum ratione? Sint aliquid exercitationem mollitia,
+        perspiciatis dignissimos architecto error cum explicabo assumenda, quam
+        quasi. Dignissimos, eligendi!
+      </p>
+    </article>
+  </section>
 </html>
