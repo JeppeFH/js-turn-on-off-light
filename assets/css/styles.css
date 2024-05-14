@@ -144,7 +144,7 @@ section {
 }
 
 #nav {
-  width: 40%;
+  width: 100%;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -155,7 +155,7 @@ section {
 }
 
 #nav-links {
-  width: 40%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -178,13 +178,13 @@ section {
 }
 
 .underline-hover:hover::after {
-  width: 3.1%;
+  width: 7.3%;
   height: 3px;
   background-color: rgb(13, 140, 13);
 }
 
 .underline-2:hover::after {
-  width: 4.5%;
+  width: 10.5%;
   height: 2px;
 }
 
@@ -202,7 +202,7 @@ section {
 }
 
 .mobile-nav article {
-  width: 40%;
+  width: 100%;
   padding: 20px;
   background-color: rgb(53, 53, 53);
   color: white;
@@ -214,6 +214,16 @@ section {
   color: white;
 }
 
+.nav-links-screen {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.nav-links-screen a:hover {
+  color: rgb(225, 225, 225);
+}
+
 #burgerNav_off,
 #burgerNav_on {
   background-color: black;
@@ -223,10 +233,25 @@ section {
   align-content: center;
   justify-items: center;
   padding: 17px;
+  display: none;
 }
 
 #burgerNav_on {
-  display: none;
   background-color: rgb(233, 233, 233);
   color: black;
+}
+
+@media screen and (max-width: 700px) {
+  #burgerNav_off,
+  #burgerNav_on {
+    display: block;
+  }
+
+  #burgerNav_on {
+    display: none;
+  }
+
+  .nav-links-screen {
+    display: none;
+  }
 }
