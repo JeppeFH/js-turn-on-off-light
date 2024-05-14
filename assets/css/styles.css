@@ -166,8 +166,30 @@ section {
   display: none;
 }
 
+.underline-hover::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: rgb(13, 140, 13);
+  display: block;
+  margin-top: 5px;
+  transition: all 500ms ease-in-out;
+}
+
+.underline-hover:hover::after {
+  width: 3.1%;
+  height: 3px;
+  background-color: rgb(13, 140, 13);
+}
+
+.underline-2:hover::after {
+  width: 4.5%;
+  height: 2px;
+}
+
 #nav-links a:hover {
-  color: rgb(216, 216, 216);
+  color: rgb(225, 225, 225);
 }
 
 #nav-links ul {
@@ -176,7 +198,7 @@ section {
 }
 
 #nav-links ul li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .mobile-nav article {
