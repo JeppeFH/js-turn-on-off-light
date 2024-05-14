@@ -26,6 +26,7 @@
   </head>
 
   <body>
+    <!--Lightbulb 1-->
     <section class="ligtbulb-1">
       <a
         onclick="document.getElementById('lamper1').src='/assets/img/bulbon.gif'"
@@ -40,6 +41,7 @@
       >
     </section>
 
+    <!--Lightbulb 2-->
     <section class="lightbulb-2">
       <img src="/assets/img/bulboff.gif" alt="" id="lamper2" />
       <img
@@ -50,22 +52,120 @@
       />
       <img id="turnOn" onclick="on()" src="/assets/img/button-off.png" alt="" />
     </section>
+
+    <!--FAQ-->
+    <section class="faq">
+      <span class="headline">FAQ</span>
+
+      <!--1-->
+      <div>
+        <h4>Hvordan...</h4>
+        <i
+          id="faqBtnOff_1"
+          onclick="faqBtnOff_1()"
+          class="fa-solid fa-caret-down"
+        ></i>
+        <i
+          id="faqBtnOn_1"
+          onclick="faqBtnOn_1()"
+          class="fa-solid fa-caret-up"
+        ></i>
+      </div>
+
+      <article id="faqHide_1">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit non ea
+          quod ad harum ratione? Sint aliquid exercitationem mollitia,
+          perspiciatis dignissimos architecto error cum explicabo assumenda,
+          quam quasi. Dignissimos, eligendi!
+        </p>
+      </article>
+
+      <!--2-->
+      <div>
+        <h4>Hvor...</h4>
+        <i
+          id="faqBtnOff_2"
+          onclick="faqBtnOff_2()"
+          class="fa-solid fa-caret-down"
+        ></i>
+        <i
+          id="faqBtnOn_2"
+          onclick="faqBtnOn_2()"
+          class="fa-solid fa-caret-up"
+        ></i>
+      </div>
+
+      <article id="faqHide_2">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit non ea
+          quod ad harum ratione? Sint aliquid exercitationem mollitia,
+          perspiciatis dignissimos architecto error cum explicabo assumenda,
+          quam quasi. Dignissimos, eligendi!
+        </p>
+      </article>
+
+      <!--3-->
+      <div>
+        <h4>Hvornår...</h4>
+        <i
+          id="faqBtnOff_3"
+          onclick="faqBtnOff_3()"
+          class="fa-solid fa-caret-down"
+        ></i>
+        <i
+          id="faqBtnOn_3"
+          onclick="faqBtnOn_3()"
+          class="fa-solid fa-caret-up"
+        ></i>
+      </div>
+
+      <article id="faqHide_3">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit non ea
+          quod ad harum ratione? Sint aliquid exercitationem mollitia,
+          perspiciatis dignissimos architecto error cum explicabo assumenda,
+          quam quasi. Dignissimos, eligendi!
+        </p>
+      </article>
+    </section>
+
+    <!--Mobile navbar-->
+    <section class="mobile-nav">
+      <div id="nav">
+        <a href="#">Logo</a>
+        <i
+          id="burgerNav_off"
+          onclick="burgermenu_off()"
+          class="fa-solid fa-bars"
+        ></i>
+        <i
+          id="burgerNav_on"
+          onclick="burgermenu_on()"
+          class="fa-solid fa-bars"
+        ></i>
+      </div>
+
+      <div id="nav-links">
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+
+      <article>
+        <h3>Vertical Mobile Navbar</h3>
+        <p>
+          This example demonstrates how a navigation menu on a <br />
+          mobile/smart phone could look like.
+        </p>
+        <p>
+          Click on the hamburger menu (three bars) in the top right corner,
+          <br />
+          to toggle the menu.
+        </p>
+      </article>
+    </section>
   </body>
-
-  <section class="faq">
-    <div id="show">
-      <h4>FAQ</h4>
-      <i id="faq-btn-off" onclick="off()" class="fa-solid fa-caret-up"></i>
-      <i id="faq-btn-on" onclick="on()" class="fa-solid fa-caret-down"></i>
-    </div>
-
-    <article id="hide">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit non ea
-        quod ad harum ratione? Sint aliquid exercitationem mollitia,
-        perspiciatis dignissimos architecto error cum explicabo assumenda, quam
-        quasi. Dignissimos, eligendi!
-      </p>
-    </article>
-  </section>
 </html>
